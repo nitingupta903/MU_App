@@ -1,0 +1,34 @@
+1. git clone urlFromBranchCode
+
+-------------------------------------------------------------
+For public:
+
+1. git config --global user.name username
+2. git config --global user.email "user email id"
+3. touch .gitignore
+4. git init
+5. git add .       //Staging area
+6. git commit -m "Initial Commit"     //snapshot
+7. git status   //optional
+8. git remote add origin pasteTheSSH
+9. git push origin master
+
+For private
+
+1. git config --global user.name username
+2. git config --global user.email "user email id"
+3. touch .gitignore
+4. git init
+5. git add .       //Staging area
+6. git commit -m "Initial Commit"     //snapshot
+7. git status   //optional
+8. git remote add origin pasteTheSSH
+
+Go to account settings--->SSH & CPG Keys
+
+9. ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+10. cat pastePublicKeyPath 
+
+Paste under key section in SSH keys
+
+11. git push origin master
